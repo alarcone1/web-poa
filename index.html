@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuela ETDH — Universidad de Cartagena</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+  <div class="capa-vacio"></div>
+  <div class="capa-atmosfera u-atmosphere"></div>
+
+  <header class="header-nuevo">
+    <div class="container header-container">
+      <div class="header-left">
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+        <span class="header-title-left">Seguimiento y Gestión</span>
+      </div>
+      <div class="header-right">
+        <img src="assets/logo/logo_oficial.png" alt="Logo Universidad de Cartagena" class="logo-u">
+        <span class="header-separator"></span>
+        <span class="header-title">Escuela ETDH</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu-panel" aria-label="Navegación principal">
+    <ul class="menu-list">
+      <li><a href="index.html" class="active"><i data-lucide="home" class="menu-icon-item"></i> Inicio</a></li>
+      <li class="menu-item-has-children">
+        <div class="menu-parent-wrapper">
+          <a href="poa-2025.html" class="menu-parent-link"><i data-lucide="calendar" class="menu-icon-item"></i> POA 2025</a>
+          <button class="menu-toggle-sub" data-target="sub-poa2025" aria-label="Abrir submenú POA 2025">
+            <i data-lucide="chevron-right" class="menu-arrow"></i>
+          </button>
+        </div>
+        <ul class="sub-menu" id="sub-poa2025">
+          <li><a href="poa-2025.html#mapa-conceptual">Mapa conceptual</a></li>
+          <li><a href="poa-2025.html#objetivos-desempeno">Objetivos de desempeño</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <div class="menu-parent-wrapper">
+          <a href="poa-2026.html" class="menu-parent-link"><i data-lucide="calendar" class="menu-icon-item"></i> POA 2026</a>
+          <button class="menu-toggle-sub" data-target="sub-poa2026" aria-label="Abrir submenú POA 2026">
+            <i data-lucide="chevron-right" class="menu-arrow"></i>
+          </button>
+        </div>
+        <ul class="sub-menu" id="sub-poa2026">
+          <li><a href="poa-2026.html#mapa-conceptual">Mapa conceptual</a></li>
+          <li><a href="poa-2026.html#objetivos-desempeno">Objetivos de desempeño</a></li>
+        </ul>
+      </li>
+      <li><a href="mapa-riesgos-2026.html"><i data-lucide="shield-alert" class="menu-icon-item"></i> Mapa de Riesgos</a></li>
+      <li><a href="diseno-curricular-adaptaton.html"><i data-lucide="book-open" class="menu-icon-item"></i> Diseño Curricular</a></li>
+            <li><a href="organigrama.html"><i data-lucide="network" class="menu-icon-item"></i> Organigrama</a></li>
+      <li><a href="stack-tecnologico.html"><i data-lucide="cpu" class="menu-icon-item"></i> Stack Tecnológico</a></li>
+    
+      <li style="border-top: 1px solid rgba(255,255,255,0.1); margin: var(--space-sm) 0;"></li>
+      <li><a href="director-etdh.html"><i data-lucide="user" class="menu-icon-item"></i> Director ETDH</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-overlay"></div>
+
+  <div class="main-content">
+
+    <section class="carrusel-container">
+      <div class="carrusel">
+        <div class="carrusel-slide active">
+          <img src="assets/banners/banner-poa-2026-obj1.png" alt="Objetivo 1: Formalización Jurídica y Administrativa">
+          <div class="carrusel-caption">
+            <h3>POA 2026 — Objetivo 1</h3>
+            <p>Formalización Jurídica y Administrativa</p>
+          </div>
+        </div>
+        <div class="carrusel-slide">
+          <img src="assets/banners/banner-poa-2026-obj2.png" alt="Objetivo 2: Ejecución Adaptatón">
+          <div class="carrusel-caption">
+            <h3>POA 2026 — Objetivo 2</h3>
+            <p>Ejecución Adaptatón</p>
+          </div>
+        </div>
+        <div class="carrusel-slide">
+          <img src="assets/banners/banner-poa-2026-obj3.png" alt="Objetivo 3: Nuevos Programas">
+          <div class="carrusel-caption">
+            <h3>POA 2026 — Objetivo 3</h3>
+            <p>Nuevos Programas</p>
+          </div>
+        </div>
+        <div class="carrusel-slide">
+          <img src="assets/banners/banner-poa-2026-obj4.png" alt="Objetivo 4: Ecosistema de Alianzas">
+          <div class="carrusel-caption">
+            <h3>POA 2026 — Objetivo 4</h3>
+            <p>Ecosistema de Alianzas</p>
+          </div>
+        </div>
+        <div class="carrusel-slide">
+          <img src="assets/banners/banner-riesgo1.png" alt="Riesgo: Parálisis por Vacío Normativo Interno">
+          <div class="carrusel-caption">
+            <h3>Riesgo — Extremo</h3>
+            <p>Parálisis por Vacío Normativo Interno</p>
+          </div>
+        </div>
+        <div class="carrusel-slide">
+          <img src="assets/banners/banner-riesgo2.png" alt="Riesgo: Obsolescencia IA en Oferta Académica">
+          <div class="carrusel-caption">
+            <h3>Riesgo — Alto</h3>
+            <p>Obsolescencia IA en Oferta Académica</p>
+          </div>
+        </div>
+        <div class="carrusel-slide">
+          <img src="assets/banners/banner-riesgo3.png" alt="Riesgo: Interrupción por Dependencia Unipersonal">
+          <div class="carrusel-caption">
+            <h3>Riesgo — Extremo</h3>
+            <p>Interrupción por Dependencia Unipersonal</p>
+          </div>
+        </div>
+        <div class="carrusel-slide">
+          <img src="assets/banners/banner-riesgo4.png" alt="Riesgo: Falla en Producción de Activos RED">
+          <div class="carrusel-caption">
+            <h3>Riesgo — Alto</h3>
+            <p>Falla en Producción de Activos RED</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carrusel-btn carrusel-prev" aria-label="Anterior">&#8249;</button>
+      <button class="carrusel-btn carrusel-next" aria-label="Siguiente">&#8250;</button>
+
+      <div class="carrusel-indicators">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+        <span class="dot" data-slide="5"></span>
+        <span class="dot" data-slide="6"></span>
+        <span class="dot" data-slide="7"></span>
+      </div>
+    </section>
+
+    <main class="capa-superficie" id="main-content">
+    <div class="container" style="padding-top: var(--space-xl); padding-bottom: var(--space-2xl);">
+      <section class="seccion-kpis" style="padding: var(--space-xl) 0;">
+        <h2 class="section-header">Estado de avance de la Escuela ETDH</h2>
+        <div class="grid-kpis">
+          <article class="kpi-card">
+            <i data-lucide="gauge" class="icon-kpi"></i>
+            <p style="font-size: var(--text-sm); font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Normativo</p>
+            <p class="kpi-valor">0%</p>
+            <div class="kpi-barra">
+              <div class="kpi-barra-fill" style="width: 0%;"></div>
+            </div>
+          </article>
+          <article class="kpi-card">
+            <i data-lucide="target" class="icon-kpi"></i>
+            <p style="font-size: var(--text-sm); font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Metodológico</p>
+            <p class="kpi-valor">87%</p>
+            <div class="kpi-barra">
+              <div class="kpi-barra-fill" style="width: 87%;"></div>
+            </div>
+          </article>
+          <article class="kpi-card">
+            <i data-lucide="trending-up" class="icon-kpi"></i>
+            <p style="font-size: var(--text-sm); font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Formativo</p>
+            <p class="kpi-valor">76%</p>
+            <div class="kpi-barra">
+              <div class="kpi-barra-fill" style="width: 76%;"></div>
+            </div>
+          </article>
+          <article class="kpi-card">
+            <i data-lucide="layers" class="icon-kpi"></i>
+            <p style="font-size: var(--text-sm); font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Articulación</p>
+            <p class="kpi-valor">70%</p>
+            <div class="kpi-barra">
+              <div class="kpi-barra-fill" style="width: 70%;"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="seccion-poa">
+        <h2 class="section-header">POA 2025 — Resumen por Objetivos</h2>
+        <div class="grid-poa">
+          <div class="poa-item">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+  <i data-lucide="clipboard-list" class="icon-doc"></i>
+  <span class="poa-nombre">Modelo Operativo y Ecosistema Tecnológico</span>
+          </div>
+            <span class="poa-avance">
+              <span class="poa-barra"><span class="poa-barra-fill" style="width: 0%;"></span></span>
+              <span class="poa-porcentaje">0%</span>
+            </span>
+          </div>
+          <div class="poa-item">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+  <i data-lucide="clipboard-list" class="icon-doc"></i>
+  <span class="poa-nombre">Modelo Metodológico y Adaptatón</span>
+          </div>
+            <span class="poa-avance">
+              <span class="poa-barra"><span class="poa-barra-fill" style="width: 87%;"></span></span>
+              <span class="poa-porcentaje">87%</span>
+            </span>
+          </div>
+          <div class="poa-item">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+  <i data-lucide="clipboard-list" class="icon-doc"></i>
+  <span class="poa-nombre">Alianzas Estratégicas y Propuesta de Valor</span>
+          </div>
+            <span class="poa-avance">
+              <span class="poa-barra"><span class="poa-barra-fill" style="width: 76%;"></span></span>
+              <span class="poa-porcentaje">76%</span>
+            </span>
+          </div>
+        </div>
+        <div style="text-align: right; margin-top: var(--space-md);">
+          <a href="poa-2025.html" class="btn-nav"><span>Ver detalle completo del POA 2025</span> <i data-lucide="arrow-right" class="icon-action"></i></a>
+        </div>
+      </section>
+
+      <section class="seccion-poa">
+        <h2 class="section-header">POA 2026 — Resumen por Objetivos</h2>
+        <div class="grid-poa">
+          <div class="poa-item">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+  <i data-lucide="clipboard-list" class="icon-doc"></i>
+  <span class="poa-nombre">Formalización Jurídica y Administrativa</span>
+          </div>
+            <span class="poa-avance">
+              <span class="poa-barra"><span class="poa-barra-fill" style="width: 54%;"></span></span>
+              <span class="poa-porcentaje">54%</span>
+            </span>
+          </div>
+          <div class="poa-item">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+  <i data-lucide="clipboard-list" class="icon-doc"></i>
+  <span class="poa-nombre">Ejecución Adaptatón</span>
+          </div>
+            <span class="poa-avance">
+              <span class="poa-barra"><span class="poa-barra-fill" style="width: 40%;"></span></span>
+              <span class="poa-porcentaje">40%</span>
+            </span>
+          </div>
+          <div class="poa-item">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+  <i data-lucide="clipboard-list" class="icon-doc"></i>
+  <span class="poa-nombre">Nuevos Programas</span>
+          </div>
+            <span class="poa-avance">
+              <span class="poa-barra"><span class="poa-barra-fill" style="width: 32%;"></span></span>
+              <span class="poa-porcentaje">32%</span>
+            </span>
+          </div>
+          <div class="poa-item">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+  <i data-lucide="clipboard-list" class="icon-doc"></i>
+  <span class="poa-nombre">Ecosistema de Alianzas</span>
+          </div>
+            <span class="poa-avance">
+              <span class="poa-barra"><span class="poa-barra-fill" style="width: 70%;"></span></span>
+              <span class="poa-porcentaje">70%</span>
+            </span>
+          </div>
+        </div>
+        <div style="text-align: right; margin-top: var(--space-md);">
+          <a href="poa-2026.html" class="btn-nav"><span>Ver detalle completo del POA 2026</span> <i data-lucide="arrow-right" class="icon-action"></i></a>
+        </div>
+      </section>
+
+       <svg style="position: absolute; width: 0; height: 0;">
+          <defs>
+            <linearGradient id="grad-accent-kpi" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6C2E8B" />
+              <stop offset="100%" stop-color="#9B59B6" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <section class="seccion-riesgos">
+        <h2 class="section-header">Mapa de Riesgos 2026 — Monitoreo</h2>
+
+        <div class="grid-kpis-riesgo">
+          <div class="kpi-riesgo-card">
+            <div class="donut-container">
+              <svg viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3.5"/>
+                <circle cx="18" cy="18" r="16" fill="none" stroke="url(#grad-accent-kpi)" stroke-width="3.5" stroke-dasharray="100" stroke-dashoffset="20" stroke-linecap="round"/>
+              </svg>
+              <span class="donut-text">80%</span>
+            </div>
+            <span class="kpi-riesgo-nombre">ITNI</span>
+            <span class="kpi-riesgo-desc">Índice de Tracción Normativa Interna</span>
+          </div>
+          <div class="kpi-riesgo-card">
+            <div class="donut-container">
+              <svg viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3.5"/>
+                <circle cx="18" cy="18" r="16" fill="none" stroke="url(#grad-accent-kpi)" stroke-width="3.5" stroke-dasharray="100" stroke-dashoffset="60" stroke-linecap="round"/>
+              </svg>
+              <span class="donut-text">40%</span>
+            </div>
+            <span class="kpi-riesgo-nombre">TPC</span>
+            <span class="kpi-riesgo-desc">Tasa de Prototipado Colaborativo</span>
+          </div>
+          <div class="kpi-riesgo-card">
+            <div class="donut-container">
+              <svg viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3.5"/>
+                <circle cx="18" cy="18" r="16" fill="none" stroke="url(#grad-accent-kpi)" stroke-width="3.5" stroke-dasharray="100" stroke-dashoffset="40" stroke-linecap="round"/>
+              </svg>
+              <span class="donut-text">60%</span>
+            </div>
+            <span class="kpi-riesgo-nombre">CAI</span>
+            <span class="kpi-riesgo-desc">Coeficiente de Actualización "IA-Ready"</span>
+          </div>
+        </div>
+
+        <div style="margin-top: var(--space-lg);">
+          <h3 style="font-size: var(--text-lg); font-weight: 600; color: var(--color-primary); margin-bottom: var(--space-md);">
+            Riesgos identificados
+          </h3>
+          <div class="table-riesgos">
+            <div class="riesgo-item">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="shield-alert" class="icon-riesgo icon-riesgo-extremo"></i>
+                <span class="riesgo-nombre">Parálisis por Vacío Normativo Interno</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                <span class="riesgo-nivel riesgo-nivel-extremo">Extremo</span>
+                <span class="riesgo-meta">Muy Alta · Crítico</span>
+              </div>
+            </div>
+            <div class="riesgo-item">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="alert-triangle" class="icon-riesgo icon-riesgo-alto"></i>
+                <span class="riesgo-nombre">Obsolescencia IA en Oferta Académica</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                <span class="riesgo-nivel riesgo-nivel-alto">Alto</span>
+                <span class="riesgo-meta">Media · Alto</span>
+              </div>
+            </div>
+            <div class="riesgo-item">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="shield-alert" class="icon-riesgo icon-riesgo-extremo"></i>
+                <span class="riesgo-nombre">Interrupción por Dependencia Unipersonal</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                <span class="riesgo-nivel riesgo-nivel-extremo">Extremo</span>
+                <span class="riesgo-meta">Alta · Crítico</span>
+              </div>
+            </div>
+            <div class="riesgo-item">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="alert-triangle" class="icon-riesgo icon-riesgo-alto"></i>
+                <span class="riesgo-nombre">Falla en Producción de Activos RED</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                <span class="riesgo-nivel riesgo-nivel-alto">Alto</span>
+                <span class="riesgo-meta">Muy Alta · Alto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: right; margin-top: var(--space-md);">
+          <a href="mapa-riesgos-2026.html" class="btn-nav"><span>Ver detalle completo del Mapa de Riesgos</span> <i data-lucide="arrow-right" class="icon-action"></i></a>
+        </div>
+      </section>
+
+      <section class="seccion-documentos">
+        <h2 class="section-header">Documentos Institucionales</h2>
+        <p style="color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+          Documentos fundacionales y estratégicos de la Escuela ETDH que orientan su gestión, operación y oferta formativa.
+        </p>
+        <div class="grid-documentos">
+          <div class="doc-item u-glass" id="doc-diagnostico" data-doc="diagnostico">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+              <i data-lucide="file-text" class="icon-doc"></i>
+              <span class="doc-nombre">Diagnóstico ETDH en Colombia (2015-2025)</span>
+            </div>
+            <p class="doc-descripcion">Documento base que fundamenta la creación de la Escuela ETDH. Contiene un análisis exhaustivo del sistema de ETDH en Colombia, con énfasis en la Región Caribe y Cartagena, identificando las brechas estructurales y oportunidades para la intervención institucional.</p>
+            <a href="documentos/informes/diagnostico-ETDH.pdf" class="btn-download" download>
+              <i data-lucide="download" class="icon-action"></i>
+              <span>Descargar</span>
+            </a>
+          </div>
+          <div class="doc-item u-glass" id="doc-hoja-ruta-td" data-doc="hoja-ruta-td">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+              <i data-lucide="file-text" class="icon-doc"></i>
+              <span class="doc-nombre">Hoja de Ruta para la Transformación Digital</span>
+            </div>
+            <p class="doc-descripcion">Documento estratégico que establece el marco conceptual, metodológico y tecnológico para la transformación digital de la Escuela ETDH. Incluye la metodología de cinco fases para el diseño y optimización de procesos, y los aspectos clave para la implementación de la innovación educativa.</p>
+            <a href="documentos/informes/hoja-ruta-TD.pdf" class="btn-download" download>
+              <i data-lucide="download" class="icon-action"></i>
+              <span>Descargar</span>
+            </a>
+          </div>
+          <div class="doc-item u-glass" id="doc-mop" data-doc="mop">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+              <i data-lucide="file-text" class="icon-doc"></i>
+              <span class="doc-nombre">Manual de Operaciones y Procedimientos (MOP)</span>
+            </div>
+            <p class="doc-descripcion">Documento operativo central de la Escuela ETDH. Establece la arquitectura de gobernanza adaptativa, los macro-procesos misionales (Académico, Administrativo y de Extensión), los procedimientos operativos y los mecanismos de documentación bilingüe para el cumplimiento normativo ante el MEN y el Ministerio del Trabajo.</p>
+            <a href="documentos/informes/MOP_borrador.pdf" class="btn-download" download>
+              <i data-lucide="download" class="icon-action"></i>
+              <span>Descargar</span>
+            </a>
+          </div>
+          <div class="doc-item u-glass" id="doc-diseno-adaptaton" data-doc="diseno-adaptaton">
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+              <i data-lucide="file-text" class="icon-doc"></i>
+              <span class="doc-nombre">Diseño Curricular — Proyecto Adaptatón</span>
+            </div>
+            <p class="doc-descripcion">Documento curricular completo del programa piloto "Promotor de Adaptatón", una micro-credencial de 80 horas certificable en el Nivel I del Marco Nacional de Cualificaciones (MNC). Incluye la justificación, la estructura curricular modular, los syllabus de los 4 módulos y el modelo de evaluación por evidencias tangibles.</p>
+            <a href="documentos/informes/diseno-adaptaton.pdf" class="btn-download" download>
+              <i data-lucide="download" class="icon-action"></i>
+              <span>Descargar</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion-formulario">
+        <h2 class="section-header">Aporta a la construcción de la Escuela ETDH</h2>
+        <p style="color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+          Tu opinión es fundamental para mejorar la pertinencia de nuestros programas y la transparencia de nuestra gestión.
+        </p>
+
+        <form id="form-retroalimentacion" class="form-retroalimentacion u-glass" style="padding: var(--space-lg); max-width: 720px; margin: 0 auto;">
+          <div class="form-group">
+            <label for="nombre" style="display: flex; align-items: center; gap: var(--space-xs);"><i data-lucide="user" class="icon-form"></i> Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Tu nombre completo">
+          </div>
+
+          <div class="form-group">
+            <label for="correo" style="display: flex; align-items: center; gap: var(--space-xs);"><i data-lucide="mail" class="icon-form"></i> Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required aria-required="true" placeholder="tu@correo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="organizacion" style="display: flex; align-items: center; gap: var(--space-xs);"><i data-lucide="building" class="icon-form"></i> Organización / Institución (opcional)</label>
+            <input type="text" id="organizacion" name="organizacion" placeholder="Nombre de tu organización">
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-aporte" style="display: flex; align-items: center; gap: var(--space-xs);"><i data-lucide="list" class="icon-form"></i> Tipo de aporte</label>
+            <select id="tipo-aporte" name="tipo-aporte">
+              <option value="sugerencia">Sugerencia sobre programas formativos</option>
+              <option value="alianza">Solicitud de alianza estratégica</option>
+              <option value="comentario">Comentario sobre la información publicada</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje" style="display: flex; align-items: center; gap: var(--space-xs);"><i data-lucide="message-square" class="icon-form"></i> Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required aria-required="true" placeholder="¿Qué quieres aportar o preguntar?" rows="4"></textarea>
+          </div>
+
+          <p style="font-size: var(--text-xs); color: var(--color-text-secondary); margin: var(--space-md) 0;">
+            Tus datos serán tratados conforme a la
+            <a href="https://unicartagena.edu.co/proteccion-datos" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: underline;">política de protección de datos</a>
+            de la Universidad de Cartagena.
+          </p>
+
+          <button type="submit" class="btn-nav" id="btn-enviar">
+            <i data-lucide="send" class="icon-action"></i>
+            <span>Enviar aporte</span>
+          </button>
+        </form>
+
+        <div id="mensaje-exito" style="display: none; text-align: center; padding: var(--space-lg); max-width: 720px; margin: 0 auto;">
+          <p style="font-size: var(--text-lg); color: var(--color-primary); font-weight: 600;">Gracias por tu contribución.</p>
+          <p style="color: var(--color-text-secondary);">Hemos recibido tu mensaje y lo revisaremos.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+      <footer style="background: var(--grad-primary); color: white; padding: var(--space-lg) 0; margin-top: var(--space-xl);">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: var(--space-md);">
+        <div style="display: flex; align-items: center; gap: var(--space-md);">
+          <div style="width: 48px; height: 48px; background: #E67E22; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: var(--text-xl); font-weight: 700; color: white; border: 2px solid rgba(255,255,255,0.3); flex-shrink: 0;">
+            E
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: var(--text-base);">Escuela ETDH</div>
+            <div style="font-size: var(--text-sm); opacity: 0.8;">
+              <a href="https://unicartagena.edu.co/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                Universidad de Cartagena — Fundada en 1827
+              </a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: var(--text-sm);">Vicerrectoría de Docencia</div>
+          <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: var(--space-xs);">
+            <a href="mailto:escuelaU@unicartagena.edu.co" style="color: inherit; text-decoration: none;">
+              escuelaU@unicartagena.edu.co
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-sm); border-top: 1px solid rgba(255,255,255,0.1);">
+        <span style="font-size: var(--text-xs); opacity: 0.6;">
+          Actualizada Junio 2026 — Escuela ETDH. Todos los derechos reservados.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  </script>
+
+  <script>
+    (function() {
+      const form = document.getElementById('form-retroalimentacion');
+      const btnEnviar = document.getElementById('btn-enviar');
+      const mensajeExito = document.getElementById('mensaje-exito');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        btnEnviar.disabled = true;
+        btnEnviar.textContent = 'Enviando tu aporte...';
+
+        setTimeout(function() {
+          form.style.display = 'none';
+          mensajeExito.style.display = 'block';
+        }, 1500);
+      });
+    })();
+  </script>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script>
+    (function() {
+      var slides = document.querySelectorAll('.carrusel-slide');
+      var dots = document.querySelectorAll('.dot');
+      var prevBtn = document.querySelector('.carrusel-prev');
+      var nextBtn = document.querySelector('.carrusel-next');
+      var currentSlide = 0;
+      var interval;
+
+      function goToSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        slides.forEach(function(slide, i) {
+          slide.classList.toggle('active', i === index);
+        });
+        dots.forEach(function(dot, i) {
+          dot.classList.toggle('active', i === index);
+        });
+        currentSlide = index;
+      }
+
+      function nextSlide() { goToSlide(currentSlide + 1); }
+      function prevSlide() { goToSlide(currentSlide - 1); }
+      function startAutoplay() { interval = setInterval(nextSlide, 5000); }
+      function stopAutoplay() { clearInterval(interval); }
+
+      nextBtn.addEventListener('click', function() { stopAutoplay(); nextSlide(); startAutoplay(); });
+      prevBtn.addEventListener('click', function() { stopAutoplay(); prevSlide(); startAutoplay(); });
+      dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+          stopAutoplay();
+          goToSlide(parseInt(this.getAttribute('data-slide')));
+          startAutoplay();
+        });
+      });
+
+      var carruselContainer = document.querySelector('.carrusel-container');
+      carruselContainer.addEventListener('mouseenter', stopAutoplay);
+      carruselContainer.addEventListener('mouseleave', startAutoplay);
+
+      startAutoplay();
+    })();
+  </script>
+
+  <script>
+    (function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menuPanel = document.querySelector('.menu-panel');
+      const mainContent = document.querySelector('.main-content');
+      const menuOverlay = document.querySelector('.menu-overlay');
+
+      function toggleMenu() {
+        menuToggle.classList.toggle('active');
+        menuPanel.classList.toggle('open');
+        mainContent.classList.toggle('shifted');
+        menuOverlay.classList.toggle('active');
+      }
+
+      function closeMenu() {
+        menuToggle.classList.remove('active');
+        menuPanel.classList.remove('open');
+        mainContent.classList.remove('shifted');
+        menuOverlay.classList.remove('active');
+        document.querySelectorAll('.sub-menu.open').forEach(function(sm) {
+          sm.classList.remove('open');
+        });
+        document.querySelectorAll('.menu-arrow.open').forEach(function(a) {
+          a.classList.remove('open');
+        });
+      }
+
+      menuToggle.addEventListener('click', toggleMenu);
+      menuOverlay.addEventListener('click', closeMenu);
+
+      document.querySelectorAll('.menu-toggle-sub').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var targetId = this.getAttribute('data-target');
+          var subMenu = document.getElementById(targetId);
+          var arrow = this.querySelector('.menu-arrow');
+          if (subMenu) {
+            subMenu.classList.toggle('open');
+            if (arrow) arrow.classList.toggle('open');
+          }
+        });
+      });
+
+      document.querySelectorAll('.menu-list > li > a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.querySelectorAll('.sub-menu a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menuPanel.classList.contains('open')) {
+          closeMenu();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

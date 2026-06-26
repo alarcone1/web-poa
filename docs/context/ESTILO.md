@@ -11,14 +11,9 @@
 
 ---
 
-## **0\. Filosofía Visual (Atmósfera de Transparencia)**
+## **0\. Filosofía Visual (Identidad Bicentenaria)**
 
-El sitio web de la Escuela ETDH **no es una página institucional convencional**. Es un **tablero de control de gestión** que comunica honestidad, claridad y modernidad.
-
-Su identidad visual se fundamenta en dos pilares:
-
-1. **La Institucionalidad** (extraída del Manual de Uso Web): colores, tipografías, dimensiones y elementos gráficos de la Universidad de Cartagena.  
-2. **La Transparencia Cristalina** (intención del proyecto): paneles semitransparentes, difuminados, animaciones sutiles y profundidad visual que comunica "no hay nada oculto".
+El sitio web de la Escuela ETDH es un **tablero de control institucional** que comunica honestidad, claridad y modernidad. Su identidad visual se fundamenta en la **paleta de colores Bicentenaria** de la Universidad de Cartagena, que aporta frescura, dinamismo y conecta con todos los públicos. La transparencia se mantiene como valor central, reflejada en el uso de cristal esmerilado y profundidad visual.
 
 La metáfora física es: **un informe de gestión impreso en vidrio**. Los datos son claros, legibles, y el fondo institucional se mantiene presente pero no opaca la información.
 
@@ -28,34 +23,43 @@ La metáfora física es: **un informe de gestión impreso en vidrio**. Los datos
 
 ## **1\. La Constitución Atómica (Design Tokens)**
 
-### **1.1. Paleta Semántica (Extraída del Manual de Uso Web)**
+### **1.1. Paleta Semántica (Basada en el Manual Bicentenaria)**
 
 | Token | Valor (Hex) | Uso Semántico |
 | :---- | :---- | :---- |
-| `--color-primary` | `#0033A0` | Azul Universidad. Identidad, autoridad, confianza. |
-| `--color-primary-light` | `#E6EEF5` | Fondos de secciones, hover, elementos secundarios. |
-| `--color-primary-dark` | `#002266` | Texto sobre fondos claros, profundidad. |
-| `--color-accent` | `#FCE300` | Amarillo institucional. Atención, acción, energía. |
-| `--color-accent-light` | `#FFF15E` | Hover, brillo, luz. |
-| `--color-accent-dark` | `#EBB700` | Sombras de elementos amarillos. |
-| `--color-text-primary` | `#1A1A2E` | Texto principal (casi negro, pero no puro). |
-| `--color-text-secondary` | `#4A4A6A` | Texto secundario, metadatos, fechas. |
-| `--color-text-inverse` | `#FFFFFF` | Texto sobre fondos oscuros o azules. |
-| `--color-text-accent` | `#0033A0` | Texto sobre fondos amarillos. |
-| `--color-bg-root` | `#F5F7FA` | Fondo general (gris muy claro, no blanco puro). |
-| `--color-surface` | `rgba(255, 255, 255, 0.85)` | Tarjetas y paneles (cristal esmerilado). |
-| `--color-surface-glass` | `rgba(255, 255, 255, 0.12)` | Cristal para capas superiores. |
-| `--color-border` | `rgba(0, 51, 160, 0.15)` | Bordes sutiles de elementos. |
-| `--color-shadow` | `rgba(0, 51, 160, 0.12)` | Sombras coloreadas (no negras). |
-| `--color-shadow-glow` | `rgba(252, 227, 0, 0.35)` | Resplandor de elementos amarillos. |
+| `--color-primary` | `#1A1A2E` | Negro institucional. Identidad, seriedad, tradición. |
+| `--color-primary-dark` | `#0D0D1A` | Profundidad, énfasis. |
+| `--color-accent` | `#F5A623` | Amarillo/Dorado. Luz, conocimiento, ciencia. |
+| `--color-accent-light` | `#F7C948` | Brillo, juventud, energía. |
+| `--color-accent-dark` | `#D4891A` | Sombra del dorado, madurez. |
+| `--color-secondary` | `#6C2E8B` | Morado. Creatividad, visión, autenticidad. |
+| `--color-secondary-light` | `#9B59B6` | Delicadeza, sensibilidad. |
+| `--color-tertiary` | `#1ABC9C` | Turquesa. Equilibrio, calma, lealtad. |
+| `--color-tertiary-light` | `#48C9B0` | Alegría, intuición. |
+| `--color-cuaternary` | `#E67E22` | Naranja. Independencia, confianza, energía. |
+| `--color-quinary` | `#2E86C1` | Azul. Libertad, armonía, seriedad. |
+| `--color-text-primary` | `#1A1A2E` | Texto principal (casi negro). |
+| `--color-text-secondary` | `#4A4A6A` | Texto secundario, metadatos. |
+| `--color-text-inverse` | `#FFFFFF` | Texto sobre fondos oscuros. |
+| `--color-bg-root` | `#F5F6FA` | Fondo general (gris muy claro). |
+| `--color-surface` | `rgba(255, 255, 255, 0.85)` | Tarjetas y paneles (cristal). |
+| `--color-border` | `rgba(26, 26, 46, 0.12)` | Bordes sutiles. |
+| `--color-shadow` | `rgba(26, 26, 46, 0.08)` | Sombras coloreadas (no negras). |
+| `--color-status-completed` | `#1ABC9C` | Estado de actividad "Completada". |
+| `--color-status-progress` | `#F5A623` | Estado de actividad "En progreso". |
+| `--color-status-blocked` | `#C0392B` | Estado de actividad "Bloqueada". |
+| `--color-status-pending` | `#B0B0C0` | Estado de actividad "No iniciada". |
+| `--color-risk-extreme` | `#C0392B` | Nivel de riesgo "Extremo". |
+| `--color-risk-high` | `#E67E22` | Nivel de riesgo "Alto". |
 
 ### **1.2. Gradientes Semánticos**
 
 | Token | Valor | Uso |
 | :---- | :---- | :---- |
-| `--grad-primary` | `linear-gradient(135deg, #0033A0, #002266)` | Fondos de encabezados, secciones destacadas. |
-| `--grad-accent` | `linear-gradient(135deg, #FCE300, #EBB700)` | Botones de acción, elementos de atención. |
-| `--grad-glass` | `linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6))` | Superficies de cristal. |
+| `--grad-primary` | `linear-gradient(135deg, #1A1A2A, #0D0D1A)` | Fondos de encabezados, secciones destacadas. |
+| `--grad-accent` | `linear-gradient(135deg, #F5A623, #D4891A)` | Botones de acción (dorado). |
+| `--grad-secondary` | `linear-gradient(135deg, #6C2E8B, #9B59B6)` | Secciones creativas o de innovación. |
+| `--grad-tertiary` | `linear-gradient(135deg, #1ABC9C, #48C9B0)` | Secciones de calma o equilibrio. |
 
 ### **1.3. Escala Espacial (Grid de 8px)**
 
@@ -447,6 +451,10 @@ El sitio se construye como un **sándwich de materiales**, de abajo hacia arriba
 | 8 | ❌ **Imágenes de stock** | Las únicas imágenes permitidas son las institucionales (Escudo, logos) y los iconos de facultades del Manual. |
 | 9 | ❌ **Exceso de colores** | Solo se usan los tokens definidos en la paleta semántica. |
 | 10 | ❌ **Movimiento brusco** | Las transiciones deben ser suaves (`ease-out`, `cubic-bezier(0.25, 1, 0.5, 1)`). |
+| 11 | ❌ **Uso excesivo de colores de la paleta Bicentenaria en una sola vista** | No saturar. Máximo 3 colores por sección. |
+| 12 | ❌ **Amarillo/Dorado como color de fondo principal** | Su uso es para detalles y acentos, no para fondos extensos. |
+| 13 | ❌ **Morado o Turquesa como colores primarios de texto** | Solo usar para títulos o elementos decorativos, no para texto corrido. |
+| 14 | ❌ **Usar colores de estados o riesgos que no estén en la paleta definida** | Todos los estados y niveles de riesgo deben usar los tokens definidos en §10. |
 
 ---
 
@@ -561,7 +569,56 @@ El sitio se construye como un **sándwich de materiales**, de abajo hacia arriba
 
 ---
 
-## **8\. Prompt de Gobernanza Visual**
+## **8\. Guía de Uso de Colores (Bicentenaria)**
+
+### **8.1. Colores Primarios (Identidad)**
+
+- **Negro (`--color-primary`):** Usar en encabezados, títulos, elementos de alta jerarquía.
+- **Amarillo/Dorado (`--color-accent`):** Usar en botones de acción, elementos de atención, resaltados.
+
+### **8.2. Colores Secundarios (Énfasis y Frescura)**
+
+- **Morado (`--color-secondary`):** Usar en secciones de innovación, creatividad o visión.
+- **Turquesa (`--color-tertiary`):** Usar en secciones de equilibrio, calma o confianza.
+- **Naranja (`--color-cuaternary`):** Usar en secciones de energía, independencia.
+- **Azul (`--color-quinary`):** Usar en secciones de seriedad, verdad, armonía.
+
+### **8.3. Reglas de Aplicación**
+
+- **No usar más de 3 colores distintos en una misma sección.** La paleta ampliada es para variedad entre secciones, no para saturación.
+- **El color de fondo general (`--color-bg-root`) debe mantenerse neutro (gris claro).**
+- **Los colores de acento deben usarse con moderación para no perder su impacto.**
+
+---
+
+## **9\. Colores de Estados y Riesgos**
+
+### **9.1. Estados de Actividades**
+
+| Estado | Color de fondo | Color de texto | Token |
+| :---- | :---- | :---- | :---- |
+| Completada | `#1ABC9C` (Turquesa) | `#FFFFFF` | `--color-status-completed` |
+| En progreso | `#F5A623` (Dorado) | `#1A1A2A` | `--color-status-progress` |
+| Bloqueada | `#C0392B` (Rojo) | `#FFFFFF` | `--color-status-blocked` |
+| No iniciada | `#B0B0C0` (Gris) | `#FFFFFF` | `--color-status-pending` |
+
+### **9.2. Niveles de Riesgo**
+
+| Nivel | Color de fondo | Color de texto | Token |
+| :---- | :---- | :---- | :---- |
+| Extremo | `#C0392B` (Rojo) | `#FFFFFF` | `--color-risk-extreme` |
+| Alto | `#E67E22` (Naranja) | `#FFFFFF` | `--color-risk-high` |
+
+### **9.3. Iconos de Riesgo**
+
+| Nivel | Color del icono | Token |
+| :---- | :---- | :---- |
+| Extremo | `#C0392B` | `--color-risk-extreme` |
+| Alto | `#E67E22` | `--color-risk-high` |
+
+---
+
+## **10\. Prompt de Gobernanza Visual**
 
 **Este documento actúa como la Fuente Única de Verdad (Single Source of Truth) para la capa visual del sitio web de la Escuela ETDH.**
 

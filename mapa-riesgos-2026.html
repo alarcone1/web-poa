@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Riesgos 2026 — Escuela ETDH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+  <div class="capa-vacio"></div>
+  <div class="capa-atmosfera u-atmosphere"></div>
+
+  <header class="header-nuevo">
+    <div class="container header-container">
+      <div class="header-left">
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+        <span class="header-title-left">Seguimiento y Gestión</span>
+      </div>
+      <div class="header-right">
+        <img src="assets/logo/logo_oficial.png" alt="Logo Universidad de Cartagena" class="logo-u">
+        <span class="header-separator"></span>
+        <span class="header-title">Escuela ETDH</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu-panel" aria-label="Navegación principal">
+    <ul class="menu-list">
+      <li><a href="index.html"><i data-lucide="home" class="menu-icon-item"></i> Inicio</a></li>
+      <li class="menu-item-has-children">
+        <div class="menu-parent-wrapper">
+          <a href="poa-2025.html" class="menu-parent-link"><i data-lucide="calendar" class="menu-icon-item"></i> POA 2025</a>
+          <button class="menu-toggle-sub" data-target="sub-poa2025" aria-label="Abrir submenú POA 2025">
+            <i data-lucide="chevron-right" class="menu-arrow"></i>
+          </button>
+        </div>
+        <ul class="sub-menu" id="sub-poa2025">
+          <li><a href="poa-2025.html#mapa-conceptual">Mapa conceptual</a></li>
+          <li><a href="poa-2025.html#objetivos-desempeno">Objetivos de desempeño</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <div class="menu-parent-wrapper">
+          <a href="poa-2026.html" class="menu-parent-link"><i data-lucide="calendar" class="menu-icon-item"></i> POA 2026</a>
+          <button class="menu-toggle-sub" data-target="sub-poa2026" aria-label="Abrir submenú POA 2026">
+            <i data-lucide="chevron-right" class="menu-arrow"></i>
+          </button>
+        </div>
+        <ul class="sub-menu" id="sub-poa2026">
+          <li><a href="poa-2026.html#mapa-conceptual">Mapa conceptual</a></li>
+          <li><a href="poa-2026.html#objetivos-desempeno">Objetivos de desempeño</a></li>
+        </ul>
+      </li>
+      <li><a href="mapa-riesgos-2026.html" class="active"><i data-lucide="shield-alert" class="menu-icon-item"></i> Mapa de Riesgos</a></li>
+      <li><a href="diseno-curricular-adaptaton.html"><i data-lucide="book-open" class="menu-icon-item"></i> Diseño Curricular</a></li>
+            <li><a href="organigrama.html"><i data-lucide="network" class="menu-icon-item"></i> Organigrama</a></li>
+      <li><a href="stack-tecnologico.html"><i data-lucide="cpu" class="menu-icon-item"></i> Stack Tecnológico</a></li>
+    
+      <li style="border-top: 1px solid rgba(255,255,255,0.1); margin: var(--space-sm) 0;"></li>
+      <li><a href="director-etdh.html"><i data-lucide="user" class="menu-icon-item"></i> Director ETDH</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-overlay"></div>
+
+  <div class="main-content">
+  <main class="capa-superficie" id="main-content">
+
+    <div class="page-header">
+      <div class="container">
+        <h1>Mapa de Riesgos 2026</h1>
+        <p>Enfoque: Resiliencia institucional y transición a operación real</p>
+      </div>
+    </div>
+
+    <div class="container" style="padding: var(--space-sm) 0; font-size: var(--text-sm); color: var(--color-text-secondary);">
+      <a href="index.html" style="color: var(--color-primary); text-decoration: none;">Inicio</a>
+      <span style="margin: 0 var(--space-xs);"><i data-lucide="chevron-right" class="icon-breadcrumb"></i></span>
+      <span>Mapa de Riesgos</span>
+    </div>
+
+    <svg style="position: absolute; width: 0; height: 0;">
+      <defs>
+        <linearGradient id="grad-accent-kpi" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#6C2E8B" />
+          <stop offset="100%" stop-color="#9B59B6" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <section class="seccion-riesgos-detalle">
+      <div class="container">
+        <h2 class="section-header">KPIs de Monitoreo Mensual</h2>
+        <div class="grid-kpis-riesgo">
+          <div class="kpi-riesgo-card">
+            <div class="donut-container">
+              <svg viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3.5"/>
+                <circle cx="18" cy="18" r="16" fill="none" stroke="url(#grad-accent-kpi)" stroke-width="3.5" stroke-dasharray="100" stroke-dashoffset="20" stroke-linecap="round"/>
+              </svg>
+              <span class="donut-text">80%</span>
+            </div>
+            <span class="kpi-riesgo-nombre">ITNI</span>
+            <span class="kpi-riesgo-desc">Índice de Tracción Normativa Interna</span>
+          </div>
+          <div class="kpi-riesgo-card">
+            <div class="donut-container">
+              <svg viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3.5"/>
+                <circle cx="18" cy="18" r="16" fill="none" stroke="url(#grad-accent-kpi)" stroke-width="3.5" stroke-dasharray="100" stroke-dashoffset="60" stroke-linecap="round"/>
+              </svg>
+              <span class="donut-text">40%</span>
+            </div>
+            <span class="kpi-riesgo-nombre">TPC</span>
+            <span class="kpi-riesgo-desc">Tasa de Prototipado Colaborativo</span>
+          </div>
+          <div class="kpi-riesgo-card">
+            <div class="donut-container">
+              <svg viewBox="0 0 36 36">
+                <circle cx="18" cy="18" r="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3.5"/>
+                <circle cx="18" cy="18" r="16" fill="none" stroke="url(#grad-accent-kpi)" stroke-width="3.5" stroke-dasharray="100" stroke-dashoffset="40" stroke-linecap="round"/>
+              </svg>
+              <span class="donut-text">60%</span>
+            </div>
+            <span class="kpi-riesgo-nombre">CAI</span>
+            <span class="kpi-riesgo-desc">Coeficiente de Actualización "IA-Ready"</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-riesgos-detalle" style="border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <h2 class="section-header">Riesgos Identificados y Planes de Mitigación</h2>
+        <div class="table-riesgos-detalle">
+          <div class="riesgo-detalle-item">
+            <div class="riesgo-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-sm);">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="shield-alert" class="icon-riesgo icon-riesgo-extremo"></i>
+                <span class="riesgo-nombre">Parálisis por Vacío Normativo Interno</span>
+              </div>
+              <span class="riesgo-nivel riesgo-nivel-extremo">Extremo</span>
+            </div>
+            <div class="riesgo-meta">
+              <span>Probabilidad: Muy Alta</span>
+              <span>Impacto: Crítico</span>
+            </div>
+            <div class="riesgo-mitigacion">
+              <strong>Mitigación:</strong> Tramitar acto administrativo interno provisional bajo figura de extensión
+            </div>
+          </div>
+          <div class="riesgo-detalle-item">
+            <div class="riesgo-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-sm);">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="alert-triangle" class="icon-riesgo icon-riesgo-alto"></i>
+                <span class="riesgo-nombre">Obsolescencia IA en Oferta Académica</span>
+              </div>
+              <span class="riesgo-nivel riesgo-nivel-alto">Alto</span>
+            </div>
+            <div class="riesgo-meta">
+              <span>Probabilidad: Media</span>
+              <span>Impacto: Alto</span>
+            </div>
+            <div class="riesgo-mitigacion">
+              <strong>Mitigación:</strong> Priorizar desarrollo de área de sistemas con enfoque en "IA para la Productividad"
+            </div>
+          </div>
+          <div class="riesgo-detalle-item">
+            <div class="riesgo-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-sm);">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="shield-alert" class="icon-riesgo icon-riesgo-extremo"></i>
+                <span class="riesgo-nombre">Interrupción por Dependencia Unipersonal</span>
+              </div>
+              <span class="riesgo-nivel riesgo-nivel-extremo">Extremo</span>
+            </div>
+            <div class="riesgo-meta">
+              <span>Probabilidad: Alta</span>
+              <span>Impacto: Crítico</span>
+            </div>
+            <div class="riesgo-mitigacion">
+              <strong>Mitigación:</strong> Documentar macro-procesos y solicitar enlace administrativo
+            </div>
+          </div>
+          <div class="riesgo-detalle-item">
+            <div class="riesgo-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-sm);">
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex: 1;">
+                <i data-lucide="alert-triangle" class="icon-riesgo icon-riesgo-alto"></i>
+                <span class="riesgo-nombre">Falla en Producción de Activos RED</span>
+              </div>
+              <span class="riesgo-nivel riesgo-nivel-alto">Alto</span>
+            </div>
+            <div class="riesgo-meta">
+              <span>Probabilidad: Muy Alta</span>
+              <span>Impacto: Alto</span>
+            </div>
+            <div class="riesgo-mitigacion">
+              <strong>Mitigación:</strong> Establecer convenios de pasantía con facultades afines
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-riesgos-detalle" style="border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <h2 class="section-header">Estrategia de Seguimiento</h2>
+        <div class="u-glass" style="padding: var(--space-lg);">
+          <p style="color: var(--color-text-primary);">
+            <strong>Documento Vivo:</strong> Revisión de alerta temprana mensual. Si el ITNI se estanca por más de dos períodos, se activa un plan de contingencia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="text-align: right; padding: var(--space-lg) 0;">
+      <a href="documentos/riesgos/mapa_riesgos_2026.pdf" class="btn-download" download>
+        <i data-lucide="download" class="icon-action"></i>
+        DESCARGAR MAPA DE RIESGOS 2026
+      </a>
+    </div>
+
+    <section class="seccion-riesgos-historicos" style="border-top: 1px solid var(--color-border); padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+      <div class="container">
+        <h2 class="section-header">Mapa de Riesgos 2025</h2>
+        <div class="u-glass" style="padding: var(--space-lg); margin-top: var(--space-md);">
+          <p style="color: var(--color-text-secondary);">
+            Documento fundacional presentado a la Vicerrectoría de Docencia en agosto de 2025. Este mapa identificó los riesgos críticos para la puesta en marcha de la Escuela, con especial énfasis en la creación de la reglamentación interna como riesgo estratégico principal. Su gestión permitió sentar las bases normativas que hoy hacen posible la operación de la Escuela ETDH.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="text-align: right; padding: var(--space-lg) 0;">
+      <a href="documentos/riesgos/mapa_riesgos_2025.pdf" class="btn-download" download>
+        <i data-lucide="download" class="icon-action"></i>
+        DESCARGAR MAPA DE RIESGOS 2025
+      </a>
+    </div>
+
+  </main>
+
+      <footer style="background: var(--grad-primary); color: white; padding: var(--space-lg) 0; margin-top: var(--space-xl);">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: var(--space-md);">
+        <div style="display: flex; align-items: center; gap: var(--space-md);">
+          <div style="width: 48px; height: 48px; background: #E67E22; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: var(--text-xl); font-weight: 700; color: white; border: 2px solid rgba(255,255,255,0.3); flex-shrink: 0;">
+            E
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: var(--text-base);">Escuela ETDH</div>
+            <div style="font-size: var(--text-sm); opacity: 0.8;">
+              <a href="https://unicartagena.edu.co/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                Universidad de Cartagena — Fundada en 1827
+              </a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: var(--text-sm);">Vicerrectoría de Docencia</div>
+          <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: var(--space-xs);">
+            <a href="mailto:escuelaU@unicartagena.edu.co" style="color: inherit; text-decoration: none;">
+              escuelaU@unicartagena.edu.co
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-sm); border-top: 1px solid rgba(255,255,255,0.1);">
+        <span style="font-size: var(--text-xs); opacity: 0.6;">
+          Actualizada Junio 2026 — Escuela ETDH. Todos los derechos reservados.
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script>
+    (function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menuPanel = document.querySelector('.menu-panel');
+      const mainContent = document.querySelector('.main-content');
+      const menuOverlay = document.querySelector('.menu-overlay');
+
+      function toggleMenu() {
+        menuToggle.classList.toggle('active');
+        menuPanel.classList.toggle('open');
+        mainContent.classList.toggle('shifted');
+        menuOverlay.classList.toggle('active');
+      }
+
+      function closeMenu() {
+        menuToggle.classList.remove('active');
+        menuPanel.classList.remove('open');
+        mainContent.classList.remove('shifted');
+        menuOverlay.classList.remove('active');
+        document.querySelectorAll('.sub-menu.open').forEach(function(sm) {
+          sm.classList.remove('open');
+        });
+        document.querySelectorAll('.menu-arrow.open').forEach(function(a) {
+          a.classList.remove('open');
+        });
+      }
+
+      menuToggle.addEventListener('click', toggleMenu);
+      menuOverlay.addEventListener('click', closeMenu);
+
+      document.querySelectorAll('.menu-toggle-sub').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var targetId = this.getAttribute('data-target');
+          var subMenu = document.getElementById(targetId);
+          var arrow = this.querySelector('.menu-arrow');
+          if (subMenu) {
+            subMenu.classList.toggle('open');
+            if (arrow) arrow.classList.toggle('open');
+          }
+        });
+      });
+
+      document.querySelectorAll('.menu-list > li > a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.querySelectorAll('.sub-menu a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menuPanel.classList.contains('open')) {
+          closeMenu();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

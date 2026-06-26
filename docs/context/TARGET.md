@@ -13,7 +13,7 @@
 
 ## **0\. Declaración de Arquetipo**
 
-El sitio web de la Escuela ETDH es un **Maestro de Obras que muestra los planos y el avance de la construcción**.
+El sitio web de la Escuela ETDH es un **Maestro de Obras que muestra los planos y el avance de la construcción, con una mirada fresca y contemporánea que refleja la evolución de la Universidad de Cartagena**.
 
 No es un vendedor, ni un narrador, ni un anfitrión. Es un **constructor** que tiene los planos abiertos sobre la mesa, el cronograma a la vista, y los materiales organizados. No promete lo que no tiene. Muestra lo que ha hecho, lo que está haciendo, y lo que necesita para avanzar.
 
@@ -120,7 +120,11 @@ La voz del sitio es la de un **Maestro de Obras Honesto**.
 | **Etiqueta de descarga de PDF** | "Descargar informe completo" | Directo, funcional. |
 | **Etiqueta de actividad bloqueada** | "Bloqueada — Pendiente de resolución" | Honesto, sin rodeos. |
 | **Etiqueta de actividad completada** | "Completada — Documentos disponibles" | Informativo, sin celebración. |
-| **Título del Mapa de Riesgos** | "Riesgos identificados y planes de mitigación" | Transparente. |
+| **Título del dashboard** | "Nuestro Progreso" | Refleja identidad Bicentenaria, fresco y directo. |
+| **Título del POA 2025** | "POA 2025 — Metas y Avances" | Moderno, orientado a resultados. |
+| **Título del POA 2026** | "POA 2026 — Metas y Avances" | Consistente con POA 2025. |
+| **Título del Mapa de Riesgos** | "Riesgos y Estrategias" | Positivo, orientado a soluciones. |
+| **Título de Documentos** | "Documentos y Recursos" | Inclusivo, amplio. |
 | **Título del formulario** | "Aporta a la construcción de la Escuela ETDH" | Conecta con el arquetipo del Maestro de Obras. |
 | **Placeholder del mensaje** | "¿Qué quieres aportar o preguntar?" | Invita a la reflexión. |
 | **Mensaje de carga del formulario** | "Enviando tu aporte..." | Procesual, informativo. |
@@ -156,6 +160,8 @@ La voz del sitio es la de un **Maestro de Obras Honesto**.
 | 6 | ❌ **Lenguaje infantil o simplista** | Subestima al usuario. |
 | 7 | ❌ **Adjetivos emocionales sin soporte** | "Excelente", "maravilloso", "espectacular". |
 | 8 | ❌ **Órdenes directas** | "Haz clic aquí", "Descarga ahora". Usar invitaciones suaves. |
+| 9 | ❌ **Tono excesivamente formal o anticuado** | Que contradiga la frescura de la nueva identidad visual Bicentenaria. El lenguaje debe ser moderno y accesible, sin perder la institucionalidad. |
+| 10 | ❌ **Usar lenguaje alarmista en los riesgos** | Los colores (rojo, naranja) ya comunican la urgencia. El texto debe ser informativo, no sensacionalista. |
 
 ---
 

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Curricular Adaptatón — Escuela ETDH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+  <div class="capa-vacio"></div>
+  <div class="capa-atmosfera u-atmosphere"></div>
+
+  <header class="header-nuevo">
+    <div class="container header-container">
+      <div class="header-left">
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+        <span class="header-title-left">Seguimiento y Gestión</span>
+      </div>
+      <div class="header-right">
+        <img src="assets/logo/logo_oficial.png" alt="Logo Universidad de Cartagena" class="logo-u">
+        <span class="header-separator"></span>
+        <span class="header-title">Escuela ETDH</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu-panel" aria-label="Navegación principal">
+    <ul class="menu-list">
+      <li><a href="index.html"><i data-lucide="home" class="menu-icon-item"></i> Inicio</a></li>
+      <li class="menu-item-has-children">
+        <div class="menu-parent-wrapper">
+          <a href="poa-2025.html" class="menu-parent-link"><i data-lucide="calendar" class="menu-icon-item"></i> POA 2025</a>
+          <button class="menu-toggle-sub" data-target="sub-poa2025" aria-label="Abrir submenú POA 2025">
+            <i data-lucide="chevron-right" class="menu-arrow"></i>
+          </button>
+        </div>
+        <ul class="sub-menu" id="sub-poa2025">
+          <li><a href="poa-2025.html#mapa-conceptual">Mapa conceptual</a></li>
+          <li><a href="poa-2025.html#objetivos-desempeno">Objetivos de desempeño</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <div class="menu-parent-wrapper">
+          <a href="poa-2026.html" class="menu-parent-link"><i data-lucide="calendar" class="menu-icon-item"></i> POA 2026</a>
+          <button class="menu-toggle-sub" data-target="sub-poa2026" aria-label="Abrir submenú POA 2026">
+            <i data-lucide="chevron-right" class="menu-arrow"></i>
+          </button>
+        </div>
+        <ul class="sub-menu" id="sub-poa2026">
+          <li><a href="poa-2026.html#mapa-conceptual">Mapa conceptual</a></li>
+          <li><a href="poa-2026.html#objetivos-desempeno">Objetivos de desempeño</a></li>
+        </ul>
+      </li>
+      <li><a href="mapa-riesgos-2026.html"><i data-lucide="shield-alert" class="menu-icon-item"></i> Mapa de Riesgos</a></li>
+            <li><a href="diseno-curricular-adaptaton.html" class="active"><i data-lucide="book-open" class="menu-icon-item"></i> Diseño Curricular</a></li>
+      <li><a href="organigrama.html"><i data-lucide="network" class="menu-icon-item"></i> Organigrama</a></li>
+      <li><a href="stack-tecnologico.html"><i data-lucide="cpu" class="menu-icon-item"></i> Stack Tecnológico</a></li>
+    
+      <li style="border-top: 1px solid rgba(255,255,255,0.1); margin: var(--space-sm) 0;"></li>
+      <li><a href="director-etdh.html"><i data-lucide="user" class="menu-icon-item"></i> Director ETDH</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-overlay"></div>
+
+  <div class="main-content">
+
+    <main class="capa-superficie" id="main-content">
+
+      <div class="page-header">
+        <div class="container">
+          <h1>Diseño Curricular — Proyecto Adaptatón</h1>
+          <p>Micro-credencial en Adaptación y Economía Circular en Barrios</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: var(--space-sm) 0; font-size: var(--text-sm); color: var(--color-text-secondary);">
+        <a href="index.html" style="color: var(--color-primary); text-decoration: none;">Inicio</a>
+        <i data-lucide="chevron-right" class="icon-breadcrumb"></i>
+        <span>Diseño Curricular Adaptatón</span>
+      </div>
+
+      <div class="container" style="padding: var(--space-xl) 0;">
+        <div class="documento-principal u-glass" style="padding: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+          <div style="display: flex; align-items: center; gap: var(--space-md);">
+            <i data-lucide="file-text" style="width: 48px; height: 48px; color: #00A3C4;"></i>
+            <div>
+              <h3 style="font-size: var(--text-lg); font-weight: 600; color: var(--color-text-primary);">Diseño Curricular - Proyecto Adaptatón</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">Versión 1.0 · 17 páginas</p>
+            </div>
+          </div>
+          <a href="documentos/informes/actividades/Diseño_Curricular_Adaptaton.pdf" class="btn-download" download>
+            <i data-lucide="download" class="icon-action"></i>
+            DESCARGAR DOCUMENTO PRINCIPAL
+          </a>
+        </div>
+      </div>
+
+      <section class="seccion-fase">
+        <div class="container">
+          <h2 class="section-header">Fase I: Diagnóstico de Pertinencia y Análisis Ocupacional</h2>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+            Documentos que fundamentan la pertinencia del programa, el análisis de la demanda y la oferta formativa, y la validación cuantitativa del "vacío crítico" en la formación de Nivel I.
+          </p>
+          <div class="grid-anexos">
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 1</span>
+                </div>
+                <h4 class="anexo-titulo">Análisis de Demanda Específica y Pertinencia</h4>
+                <p class="anexo-descripcion">Fundamento estratégico y normativo de la micro-credencial.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo1_Demanda_Pertinencia.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 2</span>
+                </div>
+                <h4 class="anexo-titulo">Análisis de Oferta Formativa ETDH en Cartagena</h4>
+                <p class="anexo-descripcion">Mapeo de programas existentes y vacíos de oferta.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo2_Diagnostico_Oferta.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 3</span>
+                </div>
+                <h4 class="anexo-titulo">Estrategia de Búsqueda y Análisis en la Plataforma SIET</h4>
+                <p class="anexo-descripcion">Metodología de búsqueda y análisis de datos en el SIET.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo3_Estrategia_SIET.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 4</span>
+                </div>
+                <h4 class="anexo-titulo">Análisis de datos SIET y validación del vacío crítico</h4>
+                <p class="anexo-descripcion">Procesamiento estadístico de datos SIET y validación del vacío.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo4_Analisis_Datos_SIET.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion-fase" style="border-top: 1px solid var(--color-border);">
+        <div class="container">
+          <h2 class="section-header">Fase II: Definición de Perfiles de Egreso por Competencias</h2>
+
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+            Esta fase consiste en traducir los hallazgos del análisis ocupacional en perfiles de egreso claros, coherentes y alineados con el modelo pedagógico del PEI. El perfil de egreso es la promesa de valor que la institución hace al estudiante y a la sociedad, describiendo lo que el egresado sabrá, sabrá hacer y será capaz de ser al culminar su formación.
+          </p>
+
+          <div class="perfil-egresado u-glass" style="padding: var(--space-lg); margin-bottom: var(--space-lg);">
+            <h3 style="font-size: var(--text-lg); font-weight: 600; color: var(--color-primary); margin-bottom: var(--space-sm);">
+              Perfil del Egresado: Promotor de Adaptación y Economía Circular en Barrios
+            </h3>
+            <p style="color: var(--color-text-secondary);">
+              El perfil del egresado de la microcredencial "Promotor de Adaptación y Economía Circular en Barrios" se certifica en el Nivel I del Marco Nacional de Cualificaciones (MNC). Este perfil es una evolución ocupacional diseñada para cerrar el "vacío crítico" en la oferta de formación de Nivel I. El Promotor ya no es solo un trabajador en tareas básicas (vinculado a las ocupaciones CUOC 96110 y 96120), sino que se transforma en un agente que gestiona y promueve la comunidad, impulsando la economía circular y la resiliencia en su área.
+            </p>
+          </div>
+
+          <div class="perfil-filas">
+
+            <div class="perfil-fila u-glass">
+              <div class="perfil-fila-icono">
+                <i data-lucide="briefcase" class="perfil-icon"></i>
+                <span class="perfil-fila-tag">CUOC</span>
+              </div>
+              <div class="perfil-fila-contenido">
+                <h4 class="perfil-fila-titulo">Ocupación de Referencia</h4>
+                <p class="perfil-fila-descripcion">96110 - Recolectores de basura y material reciclable (base) / 96120 - Clasificadores de desechos</p>
+              </div>
+            </div>
+
+            <div class="perfil-fila u-glass">
+              <div class="perfil-fila-icono">
+                <i data-lucide="wrench" class="perfil-icon"></i>
+                <span class="perfil-fila-tag">Saber-Hacer</span>
+              </div>
+              <div class="perfil-fila-contenido">
+                <h4 class="perfil-fila-titulo">Competencias Laborales Específicas</h4>
+                <p class="perfil-fila-descripcion">Clasificar residuos, promover separación en la fuente, mapeo de riesgos, identificar especies clave de la Ciénaga, aplicar técnicas de cartografía social.</p>
+              </div>
+            </div>
+
+            <div class="perfil-fila u-glass">
+              <div class="perfil-fila-icono">
+                <i data-lucide="book-open" class="perfil-icon"></i>
+                <span class="perfil-fila-tag">Conocer</span>
+              </div>
+              <div class="perfil-fila-contenido">
+                <h4 class="perfil-fila-titulo">Conocimientos Fundamentales</h4>
+                <p class="perfil-fila-descripcion">Economía Circular, Normativa de Aprovechamiento (Decreto 596 de 2016), modelos de negocio verde, riesgo climático y vulnerabilidad.</p>
+              </div>
+            </div>
+
+            <div class="perfil-fila u-glass">
+              <div class="perfil-fila-icono">
+                <i data-lucide="users" class="perfil-icon"></i>
+                <span class="perfil-fila-tag">Ser y Convivir</span>
+              </div>
+              <div class="perfil-fila-contenido">
+                <h4 class="perfil-fila-titulo">Competencias Transversales</h4>
+                <p class="perfil-fila-descripcion">Comunicación asertiva, liderazgo, proactividad, trabajo en equipo, compromiso ambiental y social, pensamiento crítico.</p>
+              </div>
+            </div>
+
+            <div class="perfil-fila u-glass">
+              <div class="perfil-fila-icono">
+                <i data-lucide="target" class="perfil-icon"></i>
+                <span class="perfil-fila-tag">RAE</span>
+              </div>
+              <div class="perfil-fila-contenido">
+                <h4 class="perfil-fila-titulo">Resultados de Aprendizaje Esperados</h4>
+                <ul class="perfil-fila-lista">
+                  <li>Aplicar técnicas de cartografía social y mapeo rápido de vulnerabilidad (Saber-Hacer).</li>
+                  <li>Clasificar y diferenciar residuos y conceptos de Economía Circular (Conocer).</li>
+                  <li>Elaborar y presentar el Mapa Comunitario de Riesgos y Activos (Ser y Producto).</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion-fase" style="border-top: 1px solid var(--color-border);">
+        <div class="container">
+          <h2 class="section-header">Fase III: Estructuración del Marco Curricular</h2>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+            Proyectos docentes (Syllabi) de los 4 módulos que componen la micro-credencial "Adaptatón".
+          </p>
+          <div class="grid-anexos">
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 5</span>
+                </div>
+                <h4 class="anexo-titulo">Módulo 1: Diagnóstico y Análisis Comunitario Local</h4>
+                <p class="anexo-descripcion">Syllabus del módulo introductorio al diagnóstico participativo.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo5_Syllabus_1.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 6</span>
+                </div>
+                <h4 class="anexo-titulo">Módulo 2: Gestión Comunitaria y Economía Circular</h4>
+                <p class="anexo-descripcion">Syllabus del módulo de gestión territorial sostenible.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo6_Syllabus_2.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 7</span>
+                </div>
+                <h4 class="anexo-titulo">Módulo 3: Herramientas Digitales para la Gestión Local</h4>
+                <p class="anexo-descripcion">Syllabus del módulo de competencias digitales aplicadas.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo7_Syllabus_3.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+            <div class="anexo-card u-glass">
+              <div style="display: flex; flex-direction: column; gap: var(--space-xs); flex: 1;">
+                <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <i data-lucide="file-text" class="icon-doc"></i>
+                  <span class="anexo-numero">Anexo 8</span>
+                </div>
+                <h4 class="anexo-titulo">Módulo 4: Proyecto de Impacto Comunitario</h4>
+                <p class="anexo-descripcion">Syllabus del módulo de cierre y aplicación práctica.</p>
+              </div>
+              <div style="margin-top: auto; padding-top: var(--space-sm);">
+                <a href="documentos/informes/actividades/Anexo8_Syllabus_4.pdf" class="btn-download" download>
+                  <i data-lucide="download" class="icon-action"></i>
+                  <span>Descargar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+        <footer style="background: var(--grad-primary); color: white; padding: var(--space-lg) 0; margin-top: var(--space-xl);">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: var(--space-md);">
+        <div style="display: flex; align-items: center; gap: var(--space-md);">
+          <div style="width: 48px; height: 48px; background: #E67E22; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: var(--text-xl); font-weight: 700; color: white; border: 2px solid rgba(255,255,255,0.3); flex-shrink: 0;">
+            E
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: var(--text-base);">Escuela ETDH</div>
+            <div style="font-size: var(--text-sm); opacity: 0.8;">
+              <a href="https://unicartagena.edu.co/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                Universidad de Cartagena — Fundada en 1827
+              </a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: var(--text-sm);">Vicerrectoría de Docencia</div>
+          <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: var(--space-xs);">
+            <a href="mailto:escuelaU@unicartagena.edu.co" style="color: inherit; text-decoration: none;">
+              escuelaU@unicartagena.edu.co
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-sm); border-top: 1px solid rgba(255,255,255,0.1);">
+        <span style="font-size: var(--text-xs); opacity: 0.6;">
+          Actualizada Junio 2026 — Escuela ETDH. Todos los derechos reservados.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <script>
+  </script>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script>
+    (function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menuPanel = document.querySelector('.menu-panel');
+      const mainContent = document.querySelector('.main-content');
+      const menuOverlay = document.querySelector('.menu-overlay');
+
+      function toggleMenu() {
+        menuToggle.classList.toggle('active');
+        menuPanel.classList.toggle('open');
+        mainContent.classList.toggle('shifted');
+        menuOverlay.classList.toggle('active');
+      }
+
+      function closeMenu() {
+        menuToggle.classList.remove('active');
+        menuPanel.classList.remove('open');
+        mainContent.classList.remove('shifted');
+        menuOverlay.classList.remove('active');
+        document.querySelectorAll('.sub-menu.open').forEach(function(sm) {
+          sm.classList.remove('open');
+        });
+        document.querySelectorAll('.menu-arrow.open').forEach(function(a) {
+          a.classList.remove('open');
+        });
+      }
+
+      menuToggle.addEventListener('click', toggleMenu);
+      menuOverlay.addEventListener('click', closeMenu);
+
+      document.querySelectorAll('.menu-toggle-sub').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var targetId = this.getAttribute('data-target');
+          var subMenu = document.getElementById(targetId);
+          var arrow = this.querySelector('.menu-arrow');
+          if (subMenu) {
+            subMenu.classList.toggle('open');
+            if (arrow) arrow.classList.toggle('open');
+          }
+        });
+      });
+
+      document.querySelectorAll('.menu-list > li > a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.querySelectorAll('.sub-menu a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menuPanel.classList.contains('open')) {
+          closeMenu();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

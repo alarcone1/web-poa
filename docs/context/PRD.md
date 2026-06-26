@@ -65,6 +65,11 @@ La Escuela nace para ser la **respuesta institucional** a estas brechas. El siti
 | **Repositorio de documentos** | Descarga de PDFs: Diagnóstico, Hoja de Ruta TD, Portafolio, informes por actividad. |
 | **Formulario de retroalimentación** | Captura de nombre, correo, organización, tipo de aporte y mensaje. |
 | **Navegación jerárquica** | Tres niveles de profundidad: Dashboard → Detalle POA → Informe por actividad. |
+| **Banner carrusel** | En la página de inicio, un carrusel automático con imágenes de fondo que representan los objetivos del POA 2026 y los riesgos identificados. |
+| **Mapa conceptual de objetivos** | En las páginas de detalle de POA (2025 y 2026), una imagen que representa visualmente los objetivos del año. |
+| **Objetivos de desempeño del director** | En las páginas de detalle de POA (2025 y 2026), un listado de las metas personales del director para ese año. |
+| **Organigrama inicial** | Página o sección dedicada al organigrama inicial de la Escuela ETDH. |
+| **Infraestructura tecnológica** | Página o sección dedicada a la descripción narrativa e imagen del stack tecnológico inicial de la Escuela. |
 
 ### **2.2. Exclusiones Explícitas (Anti-Patrones de Producto)**
 
@@ -77,6 +82,9 @@ La Escuela nace para ser la **respuesta institucional** a estas brechas. El siti
 | 5 | **No tiene comentarios públicos** | La retroalimentación es privada (formulario → correo), no hay foros ni comentarios visibles. |
 | 6 | **No tiene modo oscuro** | Se prioriza la legibilidad y la institucionalidad sobre la estética experimental. |
 | 7 | **No es responsive en todos los dispositivos** | Optimizada para escritorio; se garantiza legibilidad en móvil pero no experiencia completa. |
+| 8 | **No tiene carrusel con imágenes reales** | Inicialmente usa placeholders; las imágenes se reemplazarán en una fase posterior. |
+| 9 | **No tiene funcionalidad interactiva en el organigrama** | Es una imagen estática. |
+| 10 | **No tiene funcionalidad interactiva en el mapa conceptual** | Es una imagen estática. |
 
 ### **2.3. Criterios de Aceptación Generales**
 
@@ -188,54 +196,42 @@ El sitio web maneja **información estructurada**, no datos transaccionales. Las
 
 Inicio (Dashboard)  
 │  
+├── Banner carrusel (en index.html)  
+│  
 ├── POA 2025  
 │   ├── Resumen ejecutivo  
-│   ├── Tabla de actividades (con filtros por estado)  
-│   │   ├── Objetivo 1: Modelo operativo  
-│   │   │   ├── Actividad 1.1 → Informe completo (PDF \+ síntesis)  
-│   │   │   ├── Actividad 1.2 → Informe completo  
-│   │   │   └── ...  
-│   │   ├── Objetivo 2: Modelo metodológico  
-│   │   │   └── ...  
-│   │   └── Objetivo 3: Alianzas estratégicas  
-│   │       └── ...  
-│   └── Descarga del POA completo (PDF)  
+│   ├── Tabla de actividades  
+│   ├── Mapa conceptual de objetivos  
+│   └── Objetivos de desempeño del director  
 │  
 ├── POA 2026  
 │   ├── Resumen ejecutivo  
-│   ├── Tabla de actividades (con filtros por estado)  
-│   │   ├── Objetivo 1: Formalización jurídica  
-│   │   │   └── ...  
-│   │   ├── Objetivo 2: Ejecución Adaptatón  
-│   │   │   └── ...  
-│   │   ├── Objetivo 3: Nuevos programas  
-│   │   │   └── ...  
-│   │   └── Objetivo 4: Ecosistema de alianzas  
-│   │       └── ...  
-│   └── Descarga del POA completo (PDF)  
+│   ├── Tabla de actividades  
+│   ├── Mapa conceptual de objetivos  
+│   └── Objetivos de desempeño del director  
 │  
 ├── Mapa de Riesgos 2026  
-│   ├── Resumen de riesgos (tabla con niveles)  
-│   ├── KPIs de monitoreo (ITNI, TPC, CAI)  
-│   └── Descarga del documento completo (PDF)  
+│   ├── Resumen de riesgos  
+│   └── KPIs de monitoreo  
 │  
 ├── Documentos  
-│   ├── Diagnóstico ETDH UdeC (Documento 1\)  
-│   ├── Hoja de Ruta Transformación Digital (Documento 2\)  
-│   ├── Plan de Trabajo Inicial  
-│   ├── Portafolio Institucional  
-│   └── Informes por actividad (PDFs)  
+│   └── Repositorio de documentos  
 │  
-└── Contacto / Retroalimentación  
-    └── Formulario de aporte ciudadano
+├── Organigrama  
+│   └── Organigrama inicial de la Escuela ETDH  
+│  
+└── Stack Tecnológico  
+    └── Infraestructura tecnológica inicial
 
-### **5.2. Jerarquía de Información (Tres Niveles)**
+### **5.2. Jerarquía de Información (Cinco Niveles)**
 
 | Nivel | Contenido | Ejemplo |
 | :---- | :---- | :---- |
-| **1\. Dashboard** | KPIs macro, resumen por objetivos, acceso a documentos. | Página de inicio. |
-| **2\. Detalle de POA** | Tabla de actividades, filtros, síntesis por actividad. | `/poa-2025.html` |
+| **1\. Dashboard** | KPIs macro, resumen por objetivos, banner carrusel, documentos. | Página de inicio. |
+| **2\. Detalle de POA** | Tabla de actividades, mapa conceptual, objetivos del director. | `/poa-2025.html` |
 | **3\. Informe de actividad** | Documento PDF descargable \+ síntesis ampliada. | Enlace desde la tabla. |
+| **4\. Organigrama** | Imagen del organigrama inicial. | `/organigrama.html` |
+| **5\. Stack Tecnológico** | Descripción e imagen del stack tecnológico inicial. | `/stack-tecnologico.html` |
 
 ---
 
@@ -291,6 +287,8 @@ Inicio (Dashboard)
 | 5 | ❌ Usar dependencias externas no autorizadas | Solo Tailwind CSS y el servicio de formulario. |
 | 6 | ❌ Crear páginas con diseño plano (Flat Design) | Se debe usar Glassmorphism o material definido en `ESTILO.md`. |
 | 7 | ❌ Omitir la accesibilidad | Contraste mínimo 4.5:1, etiquetas ARIA, navegación por teclado. |
+| 8 | ❌ Usar imágenes reales en el carrusel si no se han proporcionado | Usar placeholders claros. |
+| 9 | ❌ Mezclar el menú hamburguesa con el menú horizontal | El menú hamburguesa es la navegación principal en todas las pantallas. |
 
 ### **7.2. Qué SÍ debe hacer la IA**
 
@@ -328,7 +326,24 @@ Inicio (Dashboard)
 
 ---
 
-## **10\. Checklist de Validación del PRD**
+## **10\. Header y Navegación**
+
+### **10.1. Header**
+
+- **Logo:** Logo "U" en contorno blanco al lado izquierdo.
+- **Separador:** Línea vertical delgada gris claro.
+- **Texto:** "Escuela ETDH".
+- **Menú:** Menú hamburguesa siempre visible en el lado izquierdo.
+
+### **10.2. Menú Hamburguesa**
+
+- **Comportamiento:** Panel lateral izquierdo que se despliega al hacer clic. Empuja el contenido principal hacia la derecha.
+- **Enlaces:** Inicio, POA 2025, POA 2026, Mapa de Riesgos, Documentos, Organigrama, Stack Tecnológico.
+- **Siempre visible:** En todas las pantallas (no solo en móviles).
+
+---
+
+## **11\. Checklist de Validación del PRD**
 
 - [ ] El propósito y la justificación están alineados con el diagnóstico y los POAs.  
 - [ ] Las user personas reflejan los públicos reales del proyecto.  
